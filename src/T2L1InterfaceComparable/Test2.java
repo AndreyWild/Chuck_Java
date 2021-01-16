@@ -1,7 +1,6 @@
-package T1_L1_Interface_Comparable;
+package T2L1InterfaceComparable;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
