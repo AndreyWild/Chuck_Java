@@ -22,12 +22,12 @@ public class Test1 {
         list1.add("qwerty");
         list1.add(new Car()); // выдаст ошибку, потому как Car нельзя скастить в String
         // Элементами list1 являются Object
-        for (Object o: list1){
+        for (Object o : list1) {
             // Скастили элемнт Object до String
-            System.out.println(o + " длина " + ((String)o).length());
+            System.out.println(o + " длина " + ((String) o).length());
         }
         // Параметризированный тип. <> - diamond
-        List<String>list2 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
         list2.add("Hello");
         list2.add("Bye");
         list2.add("Ok");
@@ -37,4 +37,5 @@ public class Test1 {
 }
 
 
-class Car{}
+class Car {
+}

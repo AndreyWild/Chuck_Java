@@ -19,7 +19,7 @@ public class ParametrizedClass {
 }
 
 // Создаем параметризированный класс
-class Info<T>{
+class Info<T> {
     /*T - type placeholder (заполнитель типа/хранитель типа)
       Временно исполняет роль типа данных который потом будет подставлен
       Буква Е - если используются элементы
@@ -27,15 +27,18 @@ class Info<T>{
       Буква V - если работаете с value*/
     // переменная типа Т под именем value
     private T value; // не может быть static
+
     // Создаем конструктор класса
-    public Info(T value){
+    public Info(T value) {
         this.value = value;
     }
+
     // Переписываем метод toString
     @Override
     public String toString() {
         return "{[" + value + "]}";
     }
+
     // Создали метод который возвращает переменную типа Т
     public T getValue() {
         return value;
