@@ -1,4 +1,4 @@
-package T2L2InterfaceComparator;
+package t2L2InterfaceComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
