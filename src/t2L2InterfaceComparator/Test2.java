@@ -54,12 +54,8 @@ class Employee2 implements Comparable<Employee2>
 
     @Override
     public String toString() {
-        return "Employee2{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", salary=" + salary +
-                '}';
+        return "Employee2{" + "id=" + id + ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' + ", salary=" + salary + '}';
     }
 
     @Override
@@ -72,8 +68,6 @@ class Employee2 implements Comparable<Employee2>
             return 1;
         }
     }
-
-
 }
 
 class ID2Comparator implements Comparator<Employee2>{
@@ -102,5 +96,4 @@ class Salary2Comparator implements Comparator<Employee2>{
     public int compare(Employee2 emp1, Employee2 emp2) {
         return emp1.salary-emp2.salary;
     }
-
 }

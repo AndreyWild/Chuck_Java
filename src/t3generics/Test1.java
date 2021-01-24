@@ -36,6 +36,5 @@ public class Test1 {
     }
 }
 
-
 class Car {
 }

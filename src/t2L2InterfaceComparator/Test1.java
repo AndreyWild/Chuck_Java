@@ -50,18 +50,11 @@ class Employee
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", salary=" + salary +
-                '}';
+        return "Employee{" + "id=" + id + ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' + ", salary=" + salary + '}';
     }
-
 //    @Override
 //    public int compareTo(Employee drugRabotnik) {
-//
-//
 //        return 0;
 //    }
 }
@@ -92,5 +85,4 @@ class SalaryComparator implements Comparator<Employee>{
     public int compare(Employee emp1, Employee emp2) {
         return emp1.salary-emp2.salary;
     }
-
 }
