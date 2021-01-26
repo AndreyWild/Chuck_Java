@@ -1,4 +1,4 @@
-package collection.arrayList;
+package t4collection.arrayList;
 
 import java.util.ArrayList;
 
