@@ -20,10 +20,7 @@ public class ArrayListMethods2 {
         studentsList.remove(st6); // т.к. в studentsList нету объекта st6, то ничего не удалится
         // без переписанного equals() будут сравниваться объекты, а не их содержимое, если же
         // переопределить quals(), то из списка удалится st5, т.к. он равен st6
-
-
     }
-
 }
 
 class Student{
@@ -43,13 +40,7 @@ class Student{
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", sex=" + sex +
-                ", age=" + age +
-                ", course=" + course +
-                ", avgGrade=" + avgGrade +
-                '}';
+        return "Student{" + "name='" + name + '\'' + ", sex=" + sex +
+                ", age=" + age + ", course=" + course + ", avgGrade=" + avgGrade + '}';
     }
-
 }
