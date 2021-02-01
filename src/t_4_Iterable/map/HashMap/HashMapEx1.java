@@ -1,4 +1,4 @@
-package t_4_Iterable.map;
+package t_4_Iterable.map.HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,15 +6,15 @@ import java.util.Map;
 public class HashMapEx1 {
     public static void main(String[] args) {
         Map<Integer, String> map1 = new HashMap<>();
-        map1.put(1000, "Иван Иванов"); // метод put() добавляет элемены в Map
+        map1.put(1000, "Иван Иванов"); // метод put() добавляет элементы в Map
         map1.put(3568, "Петр Петров");
         map1.put(6578, "Сергей Сергеев");
         map1.put(15879, "Василий Васильев");
-        map1.put(3568, "Олег Васильев"); // если добавить объекты с одинаковым ключем,
+        map1.put(3568, "Олег Васильев"); // если добавить объекты с одинаковым ключом,
         // то останется только последний добавленый
-        map1.put(null, "Олег Васильев"); // можно добавить объекты с ключем равным null
+        map1.put(null, "Олег Васильев"); // можно добавить объекты с ключом равным null
         map1.put(3558, null); // // можно добавить объекты cо значение null
-        map1.putIfAbsent(1000, "Дмитрий Дмитриев"); // не добавит так как ключь 1000 уже есть
+        map1.putIfAbsent(1000, "Дмитрий Дмитриев"); // не добавит так как ключ 1000 уже есть
         map1.putIfAbsent(1001, "Иван Иванов");
         System.out.println(map1.get(1000)); // "Иван Иванов"
         map1.remove(15879);
@@ -24,15 +24,14 @@ public class HashMapEx1 {
         System.out.println("values() " + map1.values());
         System.out.println("entrySet() " + map1.entrySet());
 
-
         System.out.println("map1 = " + map1);
 
         /**
-         * Элементами HashMap являются пары ключь/значение.
+         * Элементами HashMap являются пары ключ/значение.
          * HashMap не запоминает порядок добавления элементов.
          * Его методы работают очень быстро.
          * Ключи элементов должны быть уникальными.
-         * Ключь может быть null.
+         * Ключ может быть null.
          * Значения элементов могут повторяться.
          * Значения могут быть null
          * put - добавить в Map

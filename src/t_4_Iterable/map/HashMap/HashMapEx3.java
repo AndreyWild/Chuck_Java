@@ -1,4 +1,4 @@
-package t_4_Iterable.map;
+package t_4_Iterable.map.HashMap;
 
 import java.util.HashMap;
 import java.util.Map;

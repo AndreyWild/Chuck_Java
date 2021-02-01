@@ -1,4 +1,4 @@
-package t_4_Iterable.map;
+package t_4_Iterable.map.HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,8 +26,6 @@ public class HashCodeEx1 {
         System.out.println(st2.hashCode());
         System.out.println(st3.hashCode());
         System.out.println(st4.hashCode());
-
-
     }
 }
 
