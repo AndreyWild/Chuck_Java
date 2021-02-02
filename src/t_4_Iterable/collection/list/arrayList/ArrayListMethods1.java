@@ -8,7 +8,7 @@ public class ArrayListMethods1 {
         arrayList1.add("Андрей"); // метод .add() добавляет элемент с конец списка
         arrayList1.add("Саша");
         arrayList1.add("Мася");
-        arrayList1.add(1, "Миша"); // добавить Мина на 1 индекс
+        arrayList1.add(1, "Миша"); // добавить Миша на 1 индекс
         System.out.println(arrayList1); // [Андрей, Миша, Саша, Мася]
 
         System.out.println(arrayList1.get(3)); // Мася
