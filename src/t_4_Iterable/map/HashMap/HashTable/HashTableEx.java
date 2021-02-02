@@ -31,7 +31,6 @@ public class HashTableEx {
     }
 }
 
-
 class Student {
     String name;
     String surname;

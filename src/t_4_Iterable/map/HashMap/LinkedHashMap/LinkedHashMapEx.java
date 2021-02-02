@@ -54,8 +54,6 @@ public class LinkedHashMapEx {
         // 7.2=Student{name='Sergey', surname='Petrov', course=4},
         // 5.8=Student{name='Andrey', surname='Andreev', course=3},
         // 7.5=Student{name='Igor', surname='Sidorov', course=2}}
-
-
     }
 }
 

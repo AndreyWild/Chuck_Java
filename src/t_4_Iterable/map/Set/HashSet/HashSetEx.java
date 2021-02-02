@@ -22,6 +22,5 @@ public class HashSetEx {
         System.out.println(set.size()); // 4
         System.out.println(set.isEmpty()); // false
         System.out.println(set.contains("Misha")); // true
-
     }
 }

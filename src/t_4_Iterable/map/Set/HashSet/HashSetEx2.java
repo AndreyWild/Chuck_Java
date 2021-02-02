@@ -20,15 +20,19 @@ public class HashSetEx2 {
         set2.add(8);
 
         Set<Integer> union = new HashSet<>(set1); // объединение
-        union.addAll(set2); // объеденяет множества не дублируя одинаковые значения
+        union.addAll(set2); // объединяет множества не дублируя одинаковые значения
 
         Set<Integer> intersect = new HashSet<>(set1); // пересечение
         intersect.retainAll(set2); // возвращает одинаковые значения удаляе разные
 
-        Set<Integer> subtract = new HashSet<>(set1); // разность двух множест
+        Set<Integer> subtract = new HashSet<>(set1); // разность двух множеств
         subtract.removeAll(set2); // возвращает значения у которых нету дубликата
 
         System.out.println(set1 + "\n" + set2 + "\n" + union + "\n" + intersect + "\n" + subtract);
-
+//        [1, 2, 3, 5, 8]
+//        [3, 4, 5, 7, 8]
+//        [1, 2, 3, 4, 5, 7, 8]
+//        [3, 5, 8]
+//        [1, 2]
     }
 }
