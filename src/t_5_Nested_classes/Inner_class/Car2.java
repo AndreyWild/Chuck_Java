@@ -29,8 +29,6 @@ public class Car2 {
         this.engine = engine;
     }
 
-
-
     @Override
     public String toString() {
         return "My Car2: {" +

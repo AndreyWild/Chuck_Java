@@ -39,5 +39,3 @@ public class AnonymousClass {
 interface Math {
     int doOperation(int a, int b);
 }
-
-// 8:00

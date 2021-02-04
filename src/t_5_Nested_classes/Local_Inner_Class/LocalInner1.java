@@ -18,7 +18,6 @@ public class LocalInner1 {
         Math math = new Math();
         math.getResult();
     }
-
 }
 
 class Math {

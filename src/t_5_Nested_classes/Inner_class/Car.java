@@ -25,7 +25,6 @@ public class Car {
         /** ОБРАТИТЬ ВНИМАНИЕ НА СИНТАКСИС */
     }
 
-
     @Override
     public String toString() {
         return "My Car: {" +
@@ -55,6 +54,5 @@ class Test {
     public static void main(String[] args) {
         Car car = new Car("Black", 4, 300);
         System.out.println(car); // My Car: {color='Black', doorCount=4, engine=My Engine: {horsePower=300}}
-
     }
 }

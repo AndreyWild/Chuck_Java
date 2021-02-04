@@ -32,7 +32,6 @@ public class ArrayDequeEx {
         // если очередь пуста, то метод getLast() выкинет exception,
         // чтобы этого не произошло надо использовать метод peekLast()
 
-
         System.out.println(deque.removeFirst()); // 1
         System.out.println(deque); // [3, 3, 7, 8]
         System.out.println(deque.removeLast()); // 8

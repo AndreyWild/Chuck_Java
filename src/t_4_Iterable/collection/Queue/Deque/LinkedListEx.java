@@ -42,6 +42,5 @@ public class LinkedListEx {
         // если очередь пуста, то метод element() выкинет exception,
         // чтобы этого не произошло надо использовать метод pool()
         System.out.println(queue.poll()); // вернет null т.к. очередь пуста
-
     }
 }
