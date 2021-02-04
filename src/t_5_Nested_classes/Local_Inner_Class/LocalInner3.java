@@ -15,5 +15,4 @@ public class LocalInner3 {
 
 interface Math1{
     int doOperation(int a, int b);
-
 }

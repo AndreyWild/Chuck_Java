@@ -5,6 +5,8 @@ public class Tessssst {
 
 
 
+
+
         String text = "FIFA will never regret it";
         String[] words = text.split("\\s*(\\s|,|!|\\.)\\s*");
         for(String word : words){
