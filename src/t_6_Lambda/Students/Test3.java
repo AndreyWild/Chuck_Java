@@ -9,8 +9,6 @@ public class Test3 {
         System.out.println(i.abc());
     }
 
-
-
     public static void main(String[] args) {
         def((String str)->{return str.length();});
         // str видна только внутри лямбда выражения

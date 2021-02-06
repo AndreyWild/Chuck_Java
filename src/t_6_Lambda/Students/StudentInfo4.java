@@ -39,11 +39,8 @@ class Test4{
         /** Второй вариант */
         Collections.sort(students, (stu1, stu2)-> stu1.course- stu1.course);
         System.out.println(students);
-
-
     }
 }
-
 
 interface StudentChecks2 {
     boolean check(Student s);

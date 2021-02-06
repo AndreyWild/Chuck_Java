@@ -12,8 +12,6 @@ public class StudentInfo2 {
     }
 }
 
-
-
 class Test {
     public static void main(String[] args) {
         Student st1 = new Student("Ivan", 'm', 22, 3, 8.3);
@@ -51,7 +49,6 @@ interface StudentChecks {
 }
 
 class CheckOverGrade implements StudentChecks {
-
     @Override
     public boolean check(Student s) {
         return s.avgGrade > 8;

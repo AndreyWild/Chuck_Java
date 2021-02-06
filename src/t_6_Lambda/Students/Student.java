@@ -7,7 +7,6 @@ public class Student {
     int course;
     double avgGrade;
 
-
     public Student(String name, char sex, int age, int course, double avgGrade) {
         this.name = name;
         this.sex = sex;

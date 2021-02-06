@@ -22,11 +22,7 @@ public class StudentInfo {
         info.printStudentsUnderAge(students, 30);
         System.out.println("---------------------------------------------");
         info.printStudentsMixConditions(students,20,9.5, 'f');
-
-
     }
-
-
 
     void printStudentsOverGrade(ArrayList<Student> al, double grade){
         for (Student s : al){
