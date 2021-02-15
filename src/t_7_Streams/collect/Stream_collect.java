@@ -21,7 +21,6 @@ public class Stream_collect {
         students.add(st5);
 
 
-
 //        Map<Integer, List<Student>> map = students.stream().map(el -> {
 //            el.setName(el.getName().toUpperCase());
 //            return el;
@@ -34,12 +33,13 @@ public class Stream_collect {
 //        }
 
 
-        Map <Boolean, List<Student>> map =
+        Map<Boolean, List<Student>> map =
                 students.stream()
-                .collect(Collectors.partitioningBy(el -> el.getAvgGrade() > 7));
+                        .collect(Collectors.partitioningBy(el -> el.getAvgGrade() > 7));
 
         for (Map.Entry<Boolean, List<Student>> entry : map.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue().toString());
+        }
     }
 
 }
@@ -98,3 +98,5 @@ class Student {
         this.avgGrade = avgGrade;
     }
 }
+
+
