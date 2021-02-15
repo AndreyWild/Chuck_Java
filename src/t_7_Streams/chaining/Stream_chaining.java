@@ -34,7 +34,7 @@ public class Stream_chaining {
 
         // List в Stream
         students.stream()
-                // перебирая каждый элемент присвоить имя(получить имя.все с большой буквы)
+                // перебирая каждый элемент присвоить имя(получить имя().все с большой буквы())
                 .map(el -> {el.setName(el.getName().toUpperCase()); return el;})
                 // применяем фильтр, если пол = f , то проходит
                 .filter(el -> el.getSex() == 'f')
