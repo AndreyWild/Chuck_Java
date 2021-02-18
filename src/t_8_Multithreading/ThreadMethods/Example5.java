@@ -4,10 +4,13 @@ public class Example5 {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Method main begins");
         Thread thread = new Thread(new Worker());
+        System.out.println(thread.getState()); // NEW
         thread.start();
-        thread.join(1500); // ждать либо 1,5 сек либо завершения Worker
-        // (что быстрее то и сработает), т.к. Worker работает дольше 1,5 секунды,
-
+        System.out.println(thread.getState()); // RUNNABLE
+//        thread.join(1500); // ждать либо 1,5 сек либо завершения Worker
+//        // (что быстрее то и сработает), т.к. Worker работает дольше 1,5 секунды,
+        thread.join();
+        System.out.println(thread.getState()); // TERMINATED
 //        Method main begins
 //        Work begin
 //        Method main ends
