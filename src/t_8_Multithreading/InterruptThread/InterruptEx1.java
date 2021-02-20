@@ -14,18 +14,19 @@ public class InterruptEx1 {
     }
 }
 
-class InterruptThread extends Thread{
+class InterruptThread extends Thread {
     double sqrtSum = 0;
+
     public void run() {
         for (int i = 0; i <= 1000000000; i++) {
-            if(isInterrupted()){
+            if (isInterrupted()) {
                 System.out.println("Поток хотят прервать.");
                 System.out.println("Мы убедились, что состояние всех объектов нормальное" +
                         " и решили завершить работу потока.");
                 System.out.println(sqrtSum);
                 return; // завершает работу потока
             }
-            sqrtSum+=Math.sqrt(i);
+            sqrtSum += Math.sqrt(i);
             try {
                 sleep(100);
             } catch (InterruptedException e) {
@@ -34,7 +35,6 @@ class InterruptThread extends Thread{
                 System.out.println(sqrtSum);
                 return; // завершает работу потока
             }
-
         }
         System.out.println(sqrtSum);
     }
