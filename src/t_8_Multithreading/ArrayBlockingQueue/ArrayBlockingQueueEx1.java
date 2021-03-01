@@ -17,12 +17,9 @@ import java.util.concurrent.ArrayBlockingQueue;
  */
 public class ArrayBlockingQueueEx1 {
     public static void main(String[] args) {
-<<<<<<< HEAD
-        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(4); // обязательно указать размер
-=======
+
         // Очередь на 4 элемента
-        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(4);
->>>>>>> origin/master
+        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(4); // обязательно указать размер
         queue.add(1);
         queue.add(2);
         queue.add(3);

@@ -33,10 +33,6 @@ public class ArrayBlockingQueueEx2 {
                 }
             }
         }).start();
-<<<<<<< HEAD
-=======
 
-
->>>>>>> origin/master
     }
 }

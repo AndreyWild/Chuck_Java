@@ -1,9 +1,5 @@
 package t_8_Multithreading.CopyOnWriteArrayList;
 
-<<<<<<< HEAD
-import java.util.ArrayList;
-=======
->>>>>>> origin/master
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -24,19 +20,7 @@ public class CopyOnWriteArrayListEx1 {
         list.add("Sergey");
         list.add("Ivan");
         list.add("Igor");
-<<<<<<< HEAD
 
-        Runnable runnable1 = ()->{
-            Iterator<String> iterator = list.iterator();
-            while (iterator.hasNext()){
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(iterator.next());
-            }
-=======
         System.out.println(list);
 
         Runnable runnable1 = ()->{
@@ -50,26 +34,19 @@ public class CopyOnWriteArrayListEx1 {
                     }
                     System.out.println(iterator.next());
                 }
->>>>>>> origin/master
         };
 
         Runnable runnable2 = ()->{
             try {
-<<<<<<< HEAD
-=======
+
                 // спать 200 милисекунд
->>>>>>> origin/master
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-<<<<<<< HEAD
-            list.remove(4);
-=======
             // Удалить элемент с индексом 4
             list.remove(4);
             // Добавить элемент
->>>>>>> origin/master
             list.add("Elena");
         };
 
@@ -80,14 +57,6 @@ public class CopyOnWriteArrayListEx1 {
         thread1.join();
         thread2.join();
         System.out.println(list);
-<<<<<<< HEAD
     }
 }
 
-
-=======
-
-
-    }
-}
->>>>>>> origin/master
