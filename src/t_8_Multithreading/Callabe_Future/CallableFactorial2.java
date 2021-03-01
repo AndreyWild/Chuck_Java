@@ -26,9 +26,6 @@ public class CallableFactorial2 {
         }
         System.out.println(factorialResult);
     }
-
-
-
 }
 
 class Factorial3 implements Callable<Integer> {

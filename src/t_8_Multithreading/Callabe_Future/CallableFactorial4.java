@@ -37,7 +37,6 @@ public class CallableFactorial4 {
         executorService.shutdown();
         // Выводим общий результат
         System.out.println("Total sum = " + sum);
-
     }
 }
 
@@ -50,7 +49,6 @@ class PartialSum implements Callable<Long> {
         this.from = from;
         this.to = to;
     }
-
 
     // Считает сумму элементов указанного диапазона
     @Override

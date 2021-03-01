@@ -50,7 +50,6 @@ public class ConcurrentHashMapEx1 {
             map.put(6,"Elena");
         };
 
-
         Thread thread1 = new Thread(runnable1);
         Thread thread2 = new Thread(runnable2);
         thread1.start();
@@ -58,6 +57,5 @@ public class ConcurrentHashMapEx1 {
         thread1.join();
         thread2.join();
         System.out.println(map);
-
     }
 }

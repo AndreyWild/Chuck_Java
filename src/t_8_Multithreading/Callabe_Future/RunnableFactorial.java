@@ -16,7 +16,6 @@ public class RunnableFactorial {
         // если не ждать, метод run() не успеет провести расчеты и выдаст 0.
         executorService.awaitTermination(10, TimeUnit.SECONDS);
         System.out.println(factorialResult);
-
     }
 }
 
@@ -38,7 +37,5 @@ class Factorial implements Runnable{
             result *=i;
         }
         RunnableFactorial.factorialResult = result;
-
-
     }
 }

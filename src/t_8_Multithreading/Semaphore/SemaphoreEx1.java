@@ -16,8 +16,6 @@ public class SemaphoreEx1 {
         new Person("Elena", callBox);
         new Person("Viktor", callBox);
         new Person("Marina", callBox);
-
-
     }
 }
 

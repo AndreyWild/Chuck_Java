@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test1 {
     public static void main(String[] args) {
         int num = 5;
@@ -32,6 +35,18 @@ public class Test1 {
         return a < 0;
     }
 
+
+
+
+}
+
+
+class Test{
+    public static void main(String[] args) {
+        ArrayList<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        list1.toArray();
+    }
 }
 
 

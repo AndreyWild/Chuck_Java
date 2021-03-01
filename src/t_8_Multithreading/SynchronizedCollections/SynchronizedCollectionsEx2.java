@@ -33,6 +33,5 @@ public class SynchronizedCollectionsEx2 {
         // Выбросится ConcurrentModificationException,
         // т.к. нельзя 2 потока работало с ArrayList один
         // добавлял элемент, второй удалял
-
     }
 }

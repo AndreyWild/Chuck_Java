@@ -34,5 +34,4 @@ class Factorial4 implements Runnable {
         }
         RunnableFactorial.factorialResult = result;
     }
-
 }
