@@ -8,13 +8,21 @@ import java.util.concurrent.ArrayBlockingQueue;
  * Обычно один или несколько потоков добавляют
  * элементы в конец очереди, а другой или другие потоки
  * забирают элементы из начала очереди.
+<<<<<<< HEAD
  *
+=======
+>>>>>>> origin/master
  * put - добавить в конец
  * take - забрать первый
  */
 public class ArrayBlockingQueueEx1 {
     public static void main(String[] args) {
+<<<<<<< HEAD
         ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(4); // обязательно указать размер
+=======
+        // Очередь на 4 элемента
+        ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<>(4);
+>>>>>>> origin/master
         queue.add(1);
         queue.add(2);
         queue.add(3);
