@@ -7,13 +7,10 @@ import java.io.IOException;
 
 public class TryWithResources {
     public static void main(String[] args) throws IOException {
-
-
         String rubai = "Много лет размышлял я над жизнью земной.\n" +
                 "Непонятного нет для меня под луной.\n" +
                 "Мне известно, что мне ничего не известно! —\n" +
                 "Вот последняя правда, открытая мной.\n";
-
 
         /** Если FileWriter прописать в параметре try, то поток сам закроется
          * после завершения, finally можно не писать */
@@ -27,7 +24,6 @@ public class TryWithResources {
                 IOException e) {
             e.printStackTrace();
         }
-
 
         /** Аналогично и с FileReader */
         try (FileReader reader = new FileReader("Test3.txt")) {
@@ -61,7 +57,6 @@ public class TryWithResources {
         } catch (IOException e){ // если в main прописан throws IOException блок catch можно не писать
             e.printStackTrace();
         }
-
 
     }
 }

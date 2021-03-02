@@ -25,9 +25,6 @@ public class DataStreams {
             System.out.println(inputStream.readFloat());
             System.out.println(inputStream.readDouble());
 
-
-
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
