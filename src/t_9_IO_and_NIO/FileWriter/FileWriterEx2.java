@@ -15,8 +15,8 @@ public class FileWriterEx2 {
         FileWriter writer = null;
         try {
             writer = new FileWriter("Test3.txt"); // если не указать путь, создаст файл в корне
-            // writer.write(rubai);
-            writer.write(s); // перепишет файл
+             writer.write(rubai);
+//            writer.write(s); // перепишет файл
             System.out.println("Done!");
         } catch (IOException e) {
             e.printStackTrace();

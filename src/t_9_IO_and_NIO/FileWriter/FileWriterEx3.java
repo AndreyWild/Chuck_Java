@@ -14,7 +14,7 @@ public class FileWriterEx3 {
 
         FileWriter writer = null;
         try {
-            writer = new FileWriter("Test3.txt", true); // если не указать путь, создаст файл в корне
+            writer = new FileWriter("Test4.txt", true); // если не указать путь, создаст файл в корне
             // true в параметре добавит текст, а не перепишет его
             writer.write(s); // перепишет файл
             System.out.println("Done!");
