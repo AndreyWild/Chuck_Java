@@ -4,10 +4,14 @@ import java.io.Serializable;
 
 /** Чтобы объект превратить в бинарный файл, надо имплиментировать в нем Serializable */
 public class Employee implements Serializable {
+    /**В сериализируемом классе необходимо использовать serialVersionUID для обозначения версии класса.*/
+    static final long serialVersionUID = 1; // Указываем версию для сериализации объекта
+
     String name;
     String department;
     int age;
-    double salary;
+    /**Поля класса, помеченные ключевым словом transient, не записываются в файл при сериализации.*/
+    transient double salary;
     /** Чтобы объект превратить в бинарный файл, надо имплиментировать в нем Serializable */
     Car car;
 
