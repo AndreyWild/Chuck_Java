@@ -1,4 +1,4 @@
-package t_9_IO_and_NIO.FileWriter;
+package t_9_IO_and_NIO.IO.FileWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;

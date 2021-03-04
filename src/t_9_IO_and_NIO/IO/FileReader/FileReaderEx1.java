@@ -1,4 +1,4 @@
-package t_9_IO_and_NIO.FileReader;
+package t_9_IO_and_NIO.IO.FileReader;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

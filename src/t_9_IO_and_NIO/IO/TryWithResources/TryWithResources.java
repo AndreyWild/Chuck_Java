@@ -1,4 +1,4 @@
-package t_9_IO_and_NIO.TryWithResources;
+package t_9_IO_and_NIO.IO.TryWithResources;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

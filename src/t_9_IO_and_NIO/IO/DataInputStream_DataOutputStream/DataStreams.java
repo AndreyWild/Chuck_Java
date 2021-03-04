@@ -1,4 +1,4 @@
-package t_9_IO_and_NIO.DataInputStream_DataOutputStream;
+package t_9_IO_and_NIO.IO.DataInputStream_DataOutputStream;
 
 import java.io.*;
 

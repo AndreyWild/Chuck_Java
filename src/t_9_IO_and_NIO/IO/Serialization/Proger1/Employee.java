@@ -1,4 +1,4 @@
-package t_9_IO_and_NIO.Serialization.Proger1;
+package t_9_IO_and_NIO.IO.Serialization.Proger1;
 
 import java.io.Serializable;
 
