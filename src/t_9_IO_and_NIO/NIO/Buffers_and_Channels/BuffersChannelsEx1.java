@@ -41,14 +41,14 @@ public class BuffersChannelsEx1 {
                     "\nOne is as though nothing is a miracle."+
                     "\nThe other is as though everything is a miracle.";
 
-//            /** Записываем текст в файл ВАРИАНТ 1*/
-//            ByteBuffer buffer2 = ByteBuffer.allocate(text.getBytes().length); // Создали буфер размером байт текста
-//            // заносим текст в буфер массив байтов
-//            buffer2.put(text.getBytes());
-//
-//            buffer2.flip(); // меняет режим буфера с записи на чтение (position = 0)
-//
-//            channel.write(buffer2); // буфер -> канал -> файл
+            /** Записываем текст в файл ВАРИАНТ 1*/
+            ByteBuffer buffer2 = ByteBuffer.allocate(text.getBytes().length); // Создали буфер размером байт текста
+            // заносим текст в буфер массив байтов
+            buffer2.put(text.getBytes());
+
+            buffer2.flip(); // меняет режим буфера с записи на чтение (position = 0)
+
+            channel.write(buffer2); // буфер -> канал -> файл
 
             /** Записываем текст в файл ВАРИАНТ 1*/
 

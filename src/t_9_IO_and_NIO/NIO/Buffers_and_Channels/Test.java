@@ -1,4 +1,4 @@
-package Tests.Test7;
+package t_9_IO_and_NIO.NIO.Buffers_and_Channels;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -38,11 +38,11 @@ public class Test {
             buffer.clear(); // перевожу буфер в режим чтения
             StringBuilder words = new StringBuilder();
 
-                while (buffer.hasRemaining()){ // hasRemaining() - пока есть что читать - читаем из буфера
-                    words.append((char)buffer.get()); // В StringBuilder добавляем (кастим в чар) байты из buffer по-порядку
-                }
-                buffer.clear(); // меняет режим буфера с чтения на запись (position = 0),
-                // старые байты не удаляются а записываются поверх старых
+            while (buffer.hasRemaining()){ // hasRemaining() - пока есть что читать - читаем из буфера
+                words.append((char)buffer.get()); // В StringBuilder добавляем (кастим в чар) байты из buffer по-порядку
+            }
+            buffer.clear(); // меняет режим буфера с чтения на запись (position = 0),
+            // старые байты не удаляются а записываются поверх старых
 
             System.out.println(words);
 
