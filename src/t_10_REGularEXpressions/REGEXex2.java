@@ -163,6 +163,42 @@ public class REGEXex2 {
 //        Position: 10 abc5abcg6abch
         System.out.println("--------------------------------------------------------");
 
+        /** \W – Соответствует одному символу, который НЕ буква, НЕ цифра и НЕ «_» */
+        String s13 = "abcd!?abce=== abc!!5abc-g6a++bch";
+//        Pattern pattern13 = Pattern.compile("\\W"); // возвращает символы
+//        Position: 4 !
+//        Position: 5 ?
+//        Position: 10 =
+//        Position: 11 =
+//        Position: 12 =
+//        Position: 13
+//        Position: 17 !
+//        Position: 18 !
+//        Position: 23 -
+//        Position: 27 +
+//        Position: 28 +
+        Pattern pattern13 = Pattern.compile("\\W+");
+        Matcher matcher13 = pattern13.matcher(s13);
+        while (matcher13.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher13.start() + " " + matcher13.group());}
+//        Position: 4 !?
+//        Position: 10 ===
+//        Position: 17 !!
+//        Position: 23 -
+//        Position: 27 ++
+        System.out.println("--------------------------------------------------------");
+
+        /** выражение{n} – Соответствует количеству повторений «n» */
+        String s14 = "poka abc Dima dom kino 0123456789";
+        Pattern pattern14 = Pattern.compile("\\w{4}"); // [A-Za-z0-9_] вернет все символы но не пробелы
+        Matcher matcher14 = pattern14.matcher(s14);
+        while (matcher14.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher14.start() + " " + matcher14.group());}
+//        Position: 9 Dima
+//        Position: 18 kino
+//        Position: 23 0123
+//        Position: 27 4567
+
 
 
 
