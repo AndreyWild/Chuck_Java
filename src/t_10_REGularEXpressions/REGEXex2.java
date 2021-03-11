@@ -198,8 +198,100 @@ public class REGEXex2 {
 //        Position: 18 kino
 //        Position: 23 0123
 //        Position: 27 4567
+        System.out.println("--------------------------------------------------------");
+
+        /** \s – Соответствует пробельному символу */
+        String s15 = "poka    abc       Dima  dom kino     0123456789";
+        Pattern pattern15 = Pattern.compile("\\w\\s+\\w"); // \s = [\t\n\r\f]
+        Matcher matcher15 = pattern15.matcher(s15);
+        while (matcher15.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher15.start() + " " + matcher15.group());}
+//        Position: 3 a    a
+//        Position: 10 c       D
+//        Position: 21 a  d
+//        Position: 26 m k
+//        Position: 31 o     0
+        System.out.println("--------------------------------------------------------");
+
+        /** выражение{m, n} – Соответствует количеству повторений от «m» до «n» */
+        String s16 = "abcd abce3 abcfa78abcg6a";
+        Pattern pattern16 = Pattern.compile("\\D{2,6}"); // ищем от 2 до 2 НЕ цифр
+        // ("\\D{2, }") от 2 до бесконечности
+        Matcher matcher16 = pattern16.matcher(s16);
+        while (matcher16.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher16.start() + " " + matcher16.group());}
+//        Position: 0 abcd a
+//        Position: 6 bce
+//        Position: 10  abcfa
+//        Position: 18 abcg
+        System.out.println("--------------------------------------------------------");
+
+        /** выражение{m, n} – Соответствует количеству повторений от «m» до «n» */
+        String s17 = "ABCABABVABABABDA";
+        Pattern pattern17 = Pattern.compile("(AB){2,3}"); // найти AB повторяющ от 2 до 3 раз
+        Matcher matcher17 = pattern17.matcher(s17);
+        while (matcher17.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher17.start() + " " + matcher17.group());}
+//        Position: 3 ABAB
+//        Position: 8 ABABAB
+        System.out.println("--------------------------------------------------------");
+
+        /** выражение{n,} – Соответствует n или большему количеству повторений */
+        String s18 = "DABCDABABDABABABABD";
+        Pattern pattern18 = Pattern.compile("D(AB){2,}"); // найти D-AB{от 2 до бесконечности}
+        Matcher matcher18 = pattern18.matcher(s18);
+        while (matcher18.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher18.start() + " " + matcher18.group());}
+//        Position: 4 DABAB
+//        Position: 9 DABABABAB
+        System.out.println("--------------------------------------------------------");
+
+        /**
+         * выражение? – Соответствует 0 или 1 повторению
+         * выражение* – Соответствует 0 или большему количеству повторений
+         */
+        String s19 = "DABCDABABDA";
+//        Pattern pattern19 = Pattern.compile("D(AB)*"); // найти D-за которым AB{от 0 и больше}
+//        Position: 0 DAB
+//        Position: 4 DABAB
+//        Position: 9 D
+        Pattern pattern19 = Pattern.compile("D(AB)?"); // найти D-за которым AB{от 0 до 1}
+        Matcher matcher19 = pattern19.matcher(s19);
+        while (matcher19.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher19.start() + " " + matcher19.group());}
+//        Position: 0 DAB
+//        Position: 4 DAB
+//        Position: 9 D
+        System.out.println("--------------------------------------------------------");
+
+        /**
+         * \A – Соответствует выражению в начале String-а
+         * \Z – Соответствует выражению в конце String-а
+         */
+        String s20 = "abcd abce abcfabcgabch";
+//        Pattern pattern20 = Pattern.compile("\\Aabcd"); // String начинающийся с "abcd"
+        // Position: 0 abcd
+        Pattern pattern20 = Pattern.compile("bch\\Z"); // String начинающийся с "abcd"
+        // Position: 19 bch
+
+        Matcher matcher20 = pattern20.matcher(s20);
+        while (matcher20.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher20.start() + " " + matcher20.group());}
+
+        System.out.println("--------------------------------------------------------");
 
 
+        String s21 = "abcd abcd4 afc4ced7";
+        Pattern pattern21 = Pattern.compile("[abcd][efgh3-8]"); // нати 2 подряд символа
+        // 1-й один из [abcd] 2-й из [efgh3-8]
+        Matcher matcher21 = pattern21.matcher(s21);
+        while (matcher21.find()) { // matcher.find() возвращает true если соответствие было найдено
+            System.out.println("Position: " + matcher21.start() + " " + matcher21.group());}
+//        Position: 8 d4
+//        Position: 11 af
+//        Position: 13 c4
+//        Position: 15 ce
+//        Position: 17 d7
 
 
 
