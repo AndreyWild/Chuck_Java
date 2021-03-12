@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * специальными - метасимволами, т.е. обладают
  * каким-то функционалом.
  */
-public class REGEXex2 {
+public class RegExEx2 {
     public static void main(String[] args) {
         String s1 = "ABCD ABCE ABCfABCGABCH";
 

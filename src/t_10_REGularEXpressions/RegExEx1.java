@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  * специальными - метасимволами, т.е. обладают
  * каким-то функционалом.
  */
-public class REGEXex1 {
+public class RegExEx1 {
     public static void main(String[] args){
         String s
                 = "Ivanov Vasiliy, Russia, Lenin street, 51, Flat 48," +
