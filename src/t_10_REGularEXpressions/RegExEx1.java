@@ -50,17 +50,6 @@ public class RegExEx1 {
             System.out.println(matcher4.group());
         }
 
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }
