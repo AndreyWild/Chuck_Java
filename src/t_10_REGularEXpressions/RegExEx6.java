@@ -10,8 +10,6 @@ public class RegExEx6 {
         // 25[0-5]      |   2[0-4]\d    |       [01]?\d?\d   (\.)  {3} 3 раза
         // (250-255)    |   200-249     |       0-199           .
 
-
-
         System.out.println(ip + " is OK? " + Pattern.matches(regex, ip));
     }
 
@@ -20,11 +18,7 @@ public class RegExEx6 {
         String ip1 = "255.38.192.99";
         String ip2 = "182.262.91.05";
         RegExEx6 r6 = new RegExEx6();
-        r6.checkIP(ip1);
-        r6.checkIP(ip2);
-
-
-
-
+        r6.checkIP(ip1); // 255.38.192.99 is OK? true
+        r6.checkIP(ip2); // 182.262.91.05 is OK? false
     }
 }

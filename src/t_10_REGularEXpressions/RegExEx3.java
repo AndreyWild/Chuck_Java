@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 public class RegExEx3 {
     public static void main(String[] args){
         String str
@@ -23,20 +22,5 @@ public class RegExEx3 {
         /** public String [] split (String regex) */
         String [] array = str.split(" "); // в параметре указываем разделитель
         System.out.println(Arrays.toString(array));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
 }

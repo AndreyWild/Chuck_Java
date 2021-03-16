@@ -35,13 +35,10 @@ public class RandomAccessFileEx {
             file.writeBytes("\n\t\t\t\t\tWilliam Butler Yeats");
 
 
-
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

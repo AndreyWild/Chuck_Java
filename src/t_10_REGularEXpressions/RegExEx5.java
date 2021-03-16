@@ -20,14 +20,7 @@ public class RegExEx5 {
 //        System.out.println(myNewString);
 
         while (matcher.find()){
-            System.out.println(matcher.group(7)); // вывесети только 7-ю группу
+            System.out.println(matcher.group(7)); // вывести только 7-ю группу
         }
-
-
-
-
-
-
-
     }
 }

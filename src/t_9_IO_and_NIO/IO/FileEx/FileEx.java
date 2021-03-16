@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
-
 /**
  * Класс File позволяет управлять информацией о
  * файлах и директориях.
@@ -74,8 +73,6 @@ public class FileEx {
 
         // Есть ли доступ на выполнение файла
         System.out.println("file.canExecute() " + file.canExecute()); // true
-
-
 
     }
 }

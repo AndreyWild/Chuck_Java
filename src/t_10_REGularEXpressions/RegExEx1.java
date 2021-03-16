@@ -49,7 +49,5 @@ public class RegExEx1 {
         while (matcher4.find()){ // пока будут найдены совпадения
             System.out.println(matcher4.group());
         }
-
     }
-
 }

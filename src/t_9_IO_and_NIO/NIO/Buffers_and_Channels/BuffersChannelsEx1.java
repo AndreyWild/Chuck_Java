@@ -57,13 +57,6 @@ public class BuffersChannelsEx1 {
             ByteBuffer buffer3 = ByteBuffer.wrap(text.getBytes());
             channel.write(buffer3); // буфер -> канал -> файл
 
-
-
-
-
-
-
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

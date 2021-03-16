@@ -41,6 +41,4 @@ class MyFileVisitor2 extends SimpleFileVisitor<Path> {
         Files.copy(file, newDestination, StandardCopyOption.REPLACE_EXISTING);
         return FileVisitResult.CONTINUE;
     }
-
-
 }

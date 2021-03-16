@@ -40,7 +40,6 @@ public class BuffersChannelsEx2 {
                 System.out.println((char)buffer.get());
             }
 
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

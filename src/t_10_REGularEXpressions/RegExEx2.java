@@ -292,12 +292,5 @@ public class RegExEx2 {
 //        Position: 13 c4
 //        Position: 15 ce
 //        Position: 17 d7
-
-
-
-
-
     }
-
-
 }

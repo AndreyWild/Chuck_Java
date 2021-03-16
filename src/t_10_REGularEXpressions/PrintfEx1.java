@@ -25,7 +25,6 @@ public class PrintfEx1 {
 
         System.out.println(newString);
 
-
     }
 }
 

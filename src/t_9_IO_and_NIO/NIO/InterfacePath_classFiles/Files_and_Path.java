@@ -94,10 +94,5 @@ public class Files_and_Path {
             System.out.println(entry);
         }
         System.out.println("--------------------------------------------------------------");
-
-
-
-
-
     }
 }
